@@ -1,0 +1,139 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  position: relative;
+  height: 70vh;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../images/close-up-view-tennis-ball-other-trash-garbage-close-up-view-tennis-ball-other-trash-garbage-piled-117092827.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  z-index: -1;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+header nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .right {
+  gap: 50px;
+}
+
+header nav a {
+  position: relative;
+  padding: 15px 0;
+  text-decoration: none;
+  color: #cccc37;
+  font-size: 20px;
+}
+
+header nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #cccc37;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+header nav a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.bubble {
+  position: relative;
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+main {
+  height: 100vh;
+  border-top-left-radius: -20% -20%;
+  border-top-right-radius: -20% -20%;
+  padding: 40px;
+}
+
+main h1 {
+  margin-top: 20px;
+  color: #cccc37;
+}
+
+main p {
+  font-size: 18px;
+}
+
+main .left {
+  float: left;
+  margin-right: 10px;
+}
+
+main .right {
+  float: right;
+  margin-left: 10px;
+  max-width: 400px;
+}
+
+main button {
+  background: #cccc37;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+/*# sourceMappingURL=style.css.map */
